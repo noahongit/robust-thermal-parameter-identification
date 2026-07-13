@@ -683,7 +683,7 @@ class DifferentiableSSM(nn.Module):
             ax.plot(t_series, y_pred, label="Prediction", color="firebrick", linestyle="--")
 
             ax.set_ylabel(r"$T_\mathrm{in}$ [°C]")
-            ax.set_xticks(list(i for i in range(0, int(max(t_series.squeeze())) + 2, 24)))
+            # ax.set_xticks(list(i for i in range(0, int(max(t_series.squeeze())) + 2, 24)))
             # ax.set_title(f"Training Sample (Window Index: {idx})")
             ax.grid(True, linestyle="--", alpha=0.1)
 

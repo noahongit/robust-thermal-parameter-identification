@@ -943,7 +943,7 @@ class PINN(nn.Module):
         ax.plot(t, T_in_pred, label="Prediction", color="navy", linestyle="--")
         ax.set_ylabel(r"$T_\mathrm{in}$ [°C]")
         ax.set_xlabel("Time (h)")
-        ax.set_xticks(list(i for i in range(0, int(max(t)) + 2, 24)))
+        # ax.set_xticks(list(i for i in range(0, int(max(t)) + 2, 24)))
         # ax.set_ylim(self.T_in_true.min() - std_T_in, self.T_in_true.max() + std_T_in)
         ax.legend(loc="upper right", frameon=False)
         ax_i += 1
